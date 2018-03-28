@@ -4,7 +4,7 @@ function update_data(id, number) {
 }
 
 function writeUserData(userId, name, email, imageUrl) {
-  firebase.database().ref('users/' + String(Math.floor(Math.random()=10))).set({
+  firebase.database().ref('users/' + String(Math.floor(Math.random()*10))).set({
     username: name,
     email: email,
     profile_picture : imageUrl
