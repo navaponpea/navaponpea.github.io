@@ -2,7 +2,13 @@
 function update_data(id, number) {
     $("#"+String(id)).text(String(number));
 }
-
+function writeUserData(userId, name, email, imageUrl) {
+  firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: email,
+    profile_picture : imageUrl
+  });
+}
 $( document ).ready(function() {
     console.log("starting document!!!!");
 
@@ -32,6 +38,8 @@ $( document ).ready(function() {
             total_load_activePower  = data.val().load_activePower;
         } else {
            update_data(data.key, parseInt(data.val()))
+
+             writeUserData('45','navapon','navaoi@gmail.com','https://pbs.twimg.com/profile_images/966896631147765760/AJ836huS_400x400.jpg')
         }
     });
 
