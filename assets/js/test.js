@@ -19,11 +19,12 @@ $( document ).ready(function() {
     // Initialize Firebase
     var config = {
       apiKey: "AIzaSyB5yHv9dw0E9fw5IoB3-W8B2BEs2g5y4cE",
-      authDomain: "python-training-81cd1.firebaseapp.com",
-      databaseURL: "https://python-training-81cd1.firebaseio.com",
-      projectId: "python-training-81cd1",
-      storageBucket: "python-training-81cd1.appspot.com",
-      messagingSenderId: "976999995725"
+authDomain: "python-training-81cd1.firebaseapp.com",
+databaseURL: "https://python-training-81cd1.firebaseio.com",
+projectId: "python-training-81cd1",
+storageBucket: "python-training-81cd1.appspot.com",
+messagingSenderId: "976999995725"
+
 
     };
     firebase.initializeApp(config);
