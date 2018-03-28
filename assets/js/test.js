@@ -17,7 +17,7 @@ $( document ).ready(function() {
     $(function ($) {
              $("#firebasebutton").click(function (evt) {
                console.log("firebasebutton was clicked")
-             }
+             })
          });
     // Initialize Firebase
     console.log("Initialize Firebase");
